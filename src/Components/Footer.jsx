@@ -7,9 +7,18 @@ const Footer = () => {
     const isOpen = hour >= openHour && hour <= closeHour;
     console.log(isOpen);
   return (
-    <>
-        <footer>{new Date().toLocaleTimeString()}We're Currently Open</footer>
-    </>
+    
+        <footer className='footer'>
+          
+              <div className='order'>
+                <p>
+                  We're open until {closeHour}:00. Come visit us order online.
+                </p>
+                <button className='btn'>Order</button>
+              </div>
+            
+        </footer>
+    
   )
 }
 
